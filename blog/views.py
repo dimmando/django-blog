@@ -77,6 +77,7 @@ def comment_edit(request, slug, comment_id):
             messages.add_message(request, messages.ERROR, 'Error updating comment!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+    
 
 
 def comment_delete(request, slug, comment_id):
